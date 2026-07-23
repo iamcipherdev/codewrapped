@@ -6,7 +6,7 @@ Transform any public GitHub profile into a cinematic developer story using pure 
 
 ## 📸 Preview
 
-![CodeWrapped Preview](landing.png)
+![CodeWrapped Preview](landing.PNG)
 
 ---
 

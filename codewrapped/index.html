@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Transform any public GitHub profile into a beautiful, cinematic developer story.">
+  <meta name="theme-color" content="#0f1115">
+  <meta property="og:title" content="CodeWrapped — Your GitHub. Beautifully Told.">
+  <meta property="og:description" content="Discover your developer story, coding DNA, milestones, and shareable portrait.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/tilt.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <title>CodeWrapped — Your GitHub. Beautifully Told.</title>
+
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <header class="nav">
+    <a class="brand" href="index.html" aria-label="CodeWrapped home"><span aria-hidden="true">&lt;/&gt;</span>CodeWrapped</a>
+    <button id="theme-toggle" class="icon-button" aria-label="Switch color theme"><span aria-hidden="true">◐</span></button>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="eyebrow">✦ A new way to see your code</div>
+      <h1 id="hero-title">Your GitHub.<br><em>Beautifully told.</em></h1>
+      <p>Turn years of repositories, languages, and curiosity into a story worth sharing.</p>
+      <form id="search-form" class="search" novalidate>
+        <span class="search-icon" aria-hidden="true">⌘</span><span class="at" aria-hidden="true">@</span>
+        <input id="username" aria-label="GitHub username" placeholder="github username" autocomplete="off" spellcheck="false" maxlength="39" required>
+        <button id="submit-button" type="submit"><span>Generate story</span><b aria-hidden="true">→</b></button>
+      </form>
+      <div id="status" class="status" role="status" aria-live="polite"></div>
+      <div id="quick-picks" class="quick-picks"></div>
+      <a class="scroll-cue" href="#how">See how it works ↓</a>
+    </section>
+    <section id="how" class="how section-surface reveal">
+      <span class="section-kicker">One username. A whole story.</span>
+      <h2>More than numbers.<br>A portrait of how you build.</h2>
+      <div class="how-grid">
+        <article><b>01</b><h3>We read the signal</h3><p>Public repositories, languages, stars, and activity—nothing private, nothing stored remotely.</p></article>
+        <article><b>02</b><h3>We find the story</h3><p>Your patterns become an archetype, milestones, and meaningful insights.</p></article>
+        <article><b>03</b><h3>You make it yours</h3><p>Explore the cinematic profile and export a share-ready card.</p></article>
+      </div>
+    </section>
+    <div id="story" hidden></div>
+  </main>
+  <footer>
+    <a class="brand" href="index.html"><span aria-hidden="true">&lt;/&gt;</span>CodeWrapped</a>
+    <p>Built from public GitHub data. Your story stays yours.</p>
+    <a class="creator-link" href="https://www.linkedin.com/cipherwebdev" target="_blank" rel="noreferrer" aria-label="Built by Cipher on LinkedIn">Built by <strong>Cipher</strong> ↗</a>
+  </footer>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
